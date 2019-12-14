@@ -5,7 +5,7 @@ import Login from "./components/Login";
 import "./styles.scss";
 
 import BubblePage from './components/BubblePage.js';
-import PrivateRoute from './routes/PrivateRoute.js';
+import PrivateRoute from './routes/PrivateRoutes.js';
 
 function App() {
   const [colorList, setColorList] = useState([]);
