@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import {axiosWithAuth} from '../utils/axiosWithAuth.js'
 
-const Login = () => {
+const Login = (props) => {
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
-  const [credentials, setCredentials] = useState({username: '', password})
+  const [credentials, setCredentials] = useState({username: '', password: ''})
 
   const handleChange = e => {
-    swwrCredentials(
+    setCredentials(
       {
         ...credentials,
         [e.target.name]: e.target.value
