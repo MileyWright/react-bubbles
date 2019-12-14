@@ -26,23 +26,26 @@ const Login = (props) => {
     .catch(err => console.log(err))
   };
   return (
-    <>
+    <><div className='loginContainer'>
       <h1 className='header'>Welcome to the Bubble App!</h1>
-        <form onSubmit = {login}>
-          <input
+        <form class='form' onSubmit = {login}>
+          <input 
           type='text'
           name='username'
+          placeholder='Username'
           value={credentials.username}
           onChange={handleChange}/>
 
           <input
           type='password'
           name='password'
+          placeholder='Password'
           value={credentials.password}
           onChange={handleChange}/>
 
           <button type='submit'>Log In</button>
         </form>
+      </div>
     </>
   );
 };
