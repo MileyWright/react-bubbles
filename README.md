@@ -29,10 +29,23 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
-- [ ] What steps can you take in your web apps to keep your data secure?
-- [ ] Describe how web servers work.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
 
+      Tokens are used for granting access to users by a web server. Once the server has verified the user’s credentials, the server sends the user a web token. JSON Web Tokens are a good way of securely transmitting information between parties. Because JWTs can be signed—for example, using public/private key pairs—you can be sure the senders are who they say they are.
+
+- [ ] What steps can you take in your web apps to keep your data secure?
+
+      Use JSON WEB tokens. Authenticate users using axios with authorization. Create private routes that only users who are signed in can access.
+
+- [ ] Describe how web servers work.
+
+         Web servers are computers that store code for a website. Its main purpose is to ‘serve’ web pages it retrieves from your project code to users upon request.
+         
+- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+      [POST] - Create
+      [GET] - Read
+      [PUT] - Update
+      [DELETE] - Delete
+      The HTTP methods that are used when interfacing with API’s are .get – retrieve what you want from the site, or get data, .put updates the data and .delete deletes the data.
 
 ## Project Set Up
 
